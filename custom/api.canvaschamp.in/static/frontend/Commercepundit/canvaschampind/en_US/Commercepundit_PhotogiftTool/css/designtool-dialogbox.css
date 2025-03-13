@@ -1,0 +1,164 @@
+.overlay_designtool {
+    background-color: #000;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    opacity: .6;
+    -webkit-opacity: .6
+}
+
+.dialog .top.table_window {
+    display: none
+}
+
+.dialog .bot.table_window {
+    display: none
+}
+
+.designtool_nw {
+    width: 6px;
+    height: 28px
+}
+
+.designtool_n {
+    height: 28px
+}
+
+.designtool_ne {
+    width: 6px;
+    height: 28px
+}
+
+.designtool_w {
+    width: 6px
+}
+
+.designtool_e {
+    width: 6px
+}
+
+.designtool_w,
+.designtool_e,
+.designtool_content {
+    background: #ffffff
+}
+
+.designtool_sw {
+    background: #deebf0;
+    width: 5px;
+    height: 3px
+}
+
+.designtool_s {
+    background: #deebf0;
+    height: 3px
+}
+
+.designtool_se,
+.designtool_sizer {
+    background: #deebf0;
+    width: 5px;
+    height: 3px
+}
+
+.designtool_sizer {
+    cursor: se-resize
+}
+
+.designtool_close,
+.designtool_minimize,
+.designtool_maximize {
+    width: 27px;
+    height: 27px;
+    background: #000000 url(../images/dialogbox/window_close.png) no-repeat 9px 8px;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50px
+}
+
+.designtool_title {
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-align: left
+}
+
+.designtool_content {
+    overflow: auto;
+    color: #000000;
+    padding: 10px 8px 3px 8px
+}
+
+.designtool_content label {
+    color: #000000
+}
+
+.designtool_message {
+    font-size: 14px
+}
+
+.designtool_buttons {
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+
+.designtool_buttons .form-button {
+    background: #ff3366;
+    color: #ffffff;
+    padding: 3px 25px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: "graphikmedium", sans-serif;
+    border: 1px solid #ff3366;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease
+}
+
+.designtool_buttons .form-button:hover {
+    border: solid 1px #454545;
+    background: #454545
+}
+
+.designtool_buttons .form-button.cancel_button {
+    border: solid 1px #454545;
+    background: #454545;
+    float: right
+}
+
+.designtool_buttons .form-button.cancel_button:hover {
+    border: solid 1px #ff3366;
+    background: #ff3366;
+}
+
+/* FOR IE */
+
+* html .designtool_close {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/dialogbox/window_close.png", sizingMethod="crop")
+}
+
+* html .designtool_minimize {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/dialogbox/window_close.png", sizingMethod="crop");
+}
+
+* html .designtool_maximize {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/dialogbox/window_close.png", sizingMethod="crop")
+}
+
+@media only screen and (max-width:340px) {
+    .designtool_close,
+    .designtool_minimize,
+    .designtool_maximize {
+        right: 0
+    }
+}

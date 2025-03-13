@@ -1,0 +1,22 @@
+{
+	"icons": [
+		{
+			"src": "/static/images/splash-screen.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/static/images/app-icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	],
+	"name": "CanvasChamp",
+	"short_name": "CanvasChamp",
+	"orientation": "portrait",
+	"display": "standalone",
+	"start_url": "https://www.canvaschamp.in",
+	"description": "Cheap Canvas Prints - Starting At Only $4.25 | Upto 93% Off Today!",
+	"background_color": "#ffffff",
+	"theme_color": "#bf1e2e"
+}
